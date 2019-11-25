@@ -709,6 +709,7 @@ CG_INLINE BOOL isIPhone4() {
 - (void)configureAndPresentPopoverForView:(UIView *)aView {
     UIViewController *viewController = [[UIViewController alloc] initWithNibName:nil bundle:nil];
     viewController.view = aView;
+    viewController.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
 
     if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
 #pragma clang diagnostic push
