@@ -164,7 +164,7 @@
     datePicker.calendar = self.calendar;
     datePicker.timeZone = self.timeZone;
     datePicker.locale = self.locale;
-    datePicker.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    if (@available(iOS 13.0, *)) { datePicker.overrideUserInterfaceStyle = UIUserInterfaceStyleLight; }
 
     // if datepicker is set with a date in countDownMode then
     // 1h is added to the initial countdown
